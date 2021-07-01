@@ -26,6 +26,7 @@ public class HelloWorld {
     }
 }
 ```
+
 Para poder compilar este fichero lo que haremos será abrir una terminal teniendo ya instalado el JDK de java.
 
 Para ejecutar el programa en la terminal, seguiriamos los siguientes paso, escribiendo las siguientes líneas por orden en dicha terminal.
@@ -41,3 +42,39 @@ Para poder ejecutarlo, escribiriamos lo siguiente
 java HelloWorld
 ```
 Aquí no haría falta poner la extensión del fichero, porque el interprete de java ya sabe que es `.class`.
+
+## Argumentos del método main
+El método main tiene un array de argumentos de tipo String que se le pueden pasar cuando se va a ejecutar el programa desde la terminal.
+Ejemplo: 
+```shell
+nano HelloWorld.java
+```
+Y escribiremos en el fichero lo siguiente.
+```java
+public class ArgsString {
+    public static void main (String [] args) {
+        System.out.println("Hola " + args[0]);
+    }
+}
+
+```
+Para poder compilar este fichero lo que haremos será abrir una terminal teniendo ya instalado el JDK de java.
+
+Para ejecutar el programa en la terminal, seguiriamos los siguientes paso, escribiendo las siguientes líneas por orden en dicha terminal.
+
+```shell
+javac ArgsString.java
+```
+De esta forma, se compila el código fuente y esto genera el fichero `ArgsString.class`.
+
+Para poder ejecutarlo, escribiriamos lo siguiente
+
+```shell
+java ArgsString Fuen
+```
+Aquí no haría falta poner la extensión del fichero, porque el interprete de java ya sabe que es `.class`.
+
+```shell
+Hola Fuen
+```
+`
