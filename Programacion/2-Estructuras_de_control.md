@@ -94,3 +94,48 @@ public class If {
 
 }
 ```
+
+## Switch
+Es una estructura de control en la que según lo que valga la variable, se ejecutará un código u otro.
+Esta estructura no es muy escalable, ya que cada vez que quieras añadir un caso nuevo, tienes que modificarla.
+Ejemplo:
+
+```java
+public class estructura_switch {
+
+	public static void main(String[] args) {
+		int num = 2;
+		
+		switch (num) {
+		case 1:
+			System.out.println("El valor es 1");
+			break;
+		case 2:
+			System.out.println("El valor es 2");
+			break;
+		default:
+			System.out.println("El valor es mayor a 2");
+			break;
+		}
+
+	}
+
+}
+```
+
+## OPERADOR TERNARIO
+Es equivalente a una sentencia if..else, donde lo primero que se evalua es la sentencia (está antes del interrogante) y los valores de esta sentencia (estan entre :). Si la sentencia es cierta, prevalecerá el valor que esté antes de los :, y si es falsa, la que esté detrás de :.
+Ejemplo:
+
+```java
+public class estructura_switch {
+
+	public static void main(String[] args) {
+		int edad = 2;
+		
+		String resultado = (edad >= 18) ? "Eres mayor de edad" : "Eres menor de edad";
+		System.out.println(resultado);
+	}
+
+}
+```
